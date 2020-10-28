@@ -1,0 +1,136 @@
+.search-services {
+  display: block;
+  margin: 0 auto 30px;
+  box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.15);
+  background: #FFF;
+  max-width: 290px;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+
+  input {
+    background: none;
+    padding: 0 10px 0 50px;
+    height: 40px;
+    border: none;
+    color: #4F4F4F;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: "Montserrat";
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .btn {
+    position: absolute;
+    background: url(./search.svg) no-repeat;
+    top: 10px;
+    left: 13px;
+    width: 20px;
+    height: 21px;
+    border: none;
+  }
+}
+
+.branch-service_item {
+  background: #F5F5F5;
+  border-radius: 15px;
+  margin: 0 0 10px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3), -3px -3px 6px #FFFFFF;
+
+  .title {
+    position: relative;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 5px 50px 4px 20px;
+    display: flex;
+    min-height: 51px;
+    align-items: center;
+    color: #000;
+    &:after{
+      width: 16px;
+      height: 11px;
+      background: url(./arr.svg) no-repeat ;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 13px;
+      content: '';
+      display: inline-block;
+    }
+    &.active{
+      &:after{
+        transform: translateY(-50%) rotate(-180deg);
+      }
+    }
+  }
+
+  td{
+    color: #000000;
+    font-weight: bold;
+    padding: 2px 10px 33px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .time{
+    font-weight: 400;
+  }
+  .cash,
+  .time{
+    white-space: nowrap;
+  }
+  .drop{
+    padding: 3px 0 0 41px;
+  }
+  .row-img{
+    td{
+      padding: 0 7px;
+    }
+  }
+}
+
+.service-active{
+  background: #1B2B39;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3), -3px -3px 6px #FFFFFF;
+  border-radius: 25px;
+  margin: 0 0 30px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  table{
+    width: 100%;
+  }
+  td{
+    padding: 3px 0 14px;
+  }
+  .btn{
+    width: 100%;
+  }
+  .icon-remove{
+    float: right;
+    margin: 4px 0 0 25px;
+    width: 20px;
+    height: 20px;
+    background: url(./remove.svg) no-repeat center center;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+  .name{
+    padding: 0 20px 0 0;
+  }
+  .cash,
+  .time{
+    text-align: right;
+    padding-right: 45px;
+    white-space: nowrap;
+  }
+  .time{
+    font-weight: 400;
+  }
+}

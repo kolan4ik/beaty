@@ -1,0 +1,40 @@
+.money-tab{
+
+  text-align: center;
+  display: block;
+  ul{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    background: #F5F5F5;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+  }
+  li{
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 500;
+    font-size: 10px;
+    width: 110px;
+    line-height: 12px;
+    padding: 9px 0 13px;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+    color: #000000;
+  }
+  img{
+    display: block;
+    max-width: 37px;
+    max-height: 37px;
+    margin: 9px auto 0;
+  }
+  .active{
+    opacity: 0.2;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+}
+

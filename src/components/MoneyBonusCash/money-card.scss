@@ -1,0 +1,199 @@
+.money-card {
+  padding: 0 10px 0;
+
+  .btn {
+    padding: 11px 10px 13px;
+    line-height: 16px;
+    width: 100%;
+    margin: 0 0 30px;
+
+    i {
+      margin: 0 9px 0 0;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  img {
+    display: block;
+  }
+
+  label {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    color: #000000;
+  }
+
+  .form-item {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px;
+    justify-content: flex-end;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    background: #FFF;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    margin: 0 0 0 11px;
+    width: 95px;
+    border: none;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    box-sizing: border-box;
+    height: 40px;
+    text-align: right;
+  }
+}
+
+.custom-select {
+  width: 100%;
+  padding: 7px 0;
+  background: #FFF;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.15);
+
+  label {
+    position: absolute;
+    top: 10px;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000;
+    left: 20px;
+  }
+
+  .react-dropdown-select {
+    box-shadow: none !important;
+    box-sizing: border-box;
+    border: none;
+  }
+
+  .react-dropdown-select-dropdown-handle {
+    height: 25px;
+    margin: 0 6px 0 5px;
+
+    &:after {
+      content: '▲';
+      font-weight: bold;
+      font-size: 8px;
+      line-height: 17px;
+      color: #000;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+
+  .react-dropdown-select,
+  input {
+    font-weight: bold;
+    width: 100%;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    box-sizing: border-box;
+    text-align: left;
+    border: none;
+    padding: 0 15px;
+    margin: 0;
+    box-shadow: none;
+    background: none;
+
+    &::-webkit-input-placeholder {
+      color: #000;
+    }
+
+    &::-moz-placeholder {
+      color: #000;
+    }
+
+    &:-moz-placeholder {
+      color: #000;
+    }
+
+    &:-ms-input-placeholder {
+      color: #000;
+    }
+  }
+
+  .react-dropdown-select-dropdown{
+
+  }
+}
+
+.money-card_toggle {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 20px;
+
+  input {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+
+    &:checked {
+      & + span {
+        box-shadow: none;
+        background: #36B37E;
+
+        &:after {
+          background: #9AD9BE;
+          box-shadow: none;
+          left: 22px;
+        }
+      }
+    }
+  }
+
+  label {
+    display: inline;
+  }
+
+  span {
+    float: right;
+    width: 40px;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    border: none;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.15);
+    height: 20px;
+    border-radius: 25px;
+
+    &:after {
+      top: 2px;
+      background: rgba(0, 0, 0, 0.1);
+      border-radius: 100%;
+      content: '';
+      left: 2px;
+      transition: all 0.2s ease-in-out;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.custom-select--selected{
+  .react-dropdown-select-content span{
+    padding: 15px 0 0 5px;
+    margin: 0 0 -15px;
+  }
+  input{
+    width: auto;
+  }
+  .react-dropdown-select-dropdown-handle {
+    height: 24px;
+    margin: 0 -4px 0 5px;
+  }
+}
